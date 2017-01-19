@@ -20,4 +20,14 @@ public class UserServiceImpl implements UserService {
 		return database.readUser(name);
 	}
 
+	@Override
+	public User updateUser(String name, String updatedName) {
+		return database.updateUser(name, updatedName);
+	}
+
+	@Override
+	public String deleteUser(String name) {
+		return database.deleteUser(name);
+	}
+
 }
